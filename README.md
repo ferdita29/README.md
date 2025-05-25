@@ -163,7 +163,7 @@ Kesimpulan Heatmap Korelasi:
 Pertama, akan diubah nilai-nilai kategorikal pada data menggunakan encoder sehingga menjadi nilai-nilai numerik agar dapat dilatih dengan *machine learning*.
 
 ### Data Cleaning
-Setelah diperiksa apakah terdapat kolom yang bernilai null, hasilnya adalah tidak ada. Sementara itu, setelah diperiksa apakah terdapat data duplikat, ditemukan 3197 duplikat, sehingga data duplikat ini dihapus. Oleh karena itu, setelah dilakukan pembersihan data, diperoleh deskripsi statistik data numerik sebagai berikut. 
+Data cleaning adalah proses penting dalam analisis data dan machine learning yang bertujuan untuk memperbaiki atau menghapus data yang rusak, tidak konsisten, tidak lengkap, atau tidak relevan dari dataset agar kualitas analisis atau prediksi menjadi lebih akurat dan andal.
 
 #### mengecek data duplicate
 <img src="https://github.com/user-attachments/assets/2da0765c-e430-44a4-9226-b2b52d7f468e" alt="cek_data_duplicate" width="200">
