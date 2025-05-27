@@ -10,21 +10,17 @@ Pada zaman sekarang, teknologi telah berkembang pesat, salah satunya adalah tekn
 
 ### Problem Statements
 Rumusan masalah dari masalah latar belakang diatas adalah:
-1.  Dari berbagai faktor yang ada, Faktor apa saja yang paling mempengaruhi seseorang di diagnosis menderita cancer?
-2.  Bagaimana mengetahui seseorang terkena kanker berdasarkan rekam medis ?
-3.  Bagaimana mengetahui seseorang terkena kanker berdasarkan riwayat kesehatan dan aktivitas yang dilakukan?
+1. faktor-faktor apa saja yang paling berpengaruh dalam memprediksi risiko kanker pada seseorang?
+2.  Bagaimana mengetahui seseorang terkena kanker berdasarkan riwayat kesehatan dan aktivitas yang dilakukan?
 
 ### Goals
 Berdasarkan problem statements, berikut tujuan yang ingin dicapai pada proyek ini.
-1. Mengetahui  faktor tiga faktor yang paling berpengaruh terhadap terkena seseorang terkena cancer.
-2. Mengetahui faktor-faktor yang terkena penyakit cancer berdasarkan rekam medis.
-3. Menemukan model terbaik berdasarkan akurasi tertinggi untuk memprediksi penyakit cancer pada responden.
+1. Mengetahui  faktor-faktor yang paling berpengaruh terhadap seseorang terkena cancer.
+2. Menemukan model terbaik berdasarkan akurasi tertinggi untuk memprediksi penyakit cancer pada responden.
 
 ### Solution Statement
-
-1.   analisis pada data untuk memahami fitur-fitur yang mempengaruhi orang terkena cancer, dengan menerapkan teknik visualisasi data dan deskripsi statistik data mengetahui korelasi antar fitur dan memahami hubungan antara data target (label) dan fitur lainnya.
-2.   Menggunakan algoritma machine learning untuk membandingkan performa model untuk mendapatkan model atau algoritma yang memiliki akurasi prediksi terbaik dalam memprediksi seseorang terkena cardiovascular berdasarkan riwayat kesehatan dan aktivitas yang dilakukan. Menggunakan 6 model *machine learning* untuk memprediksi penyakit cancer pada responden, yaitu *Extreme Gradient Boosting* (XGBoost), *Logistik Regression*, *Decision Tree*, *K-Nearest Neighbors* (KNN), *Catboosting*, dan *Random Forest*.
-3. Menggunakan confusion matrix dan f1 score pada masing-masing model *machine learning* untuk menemukan model terbaik berdasarkan akurasi tertinggi.
+1. faktor-faktor yang paling berpengaruh dalam memprediksi risiko kanker adalah usia, aktivitas fisik, indeks massa tubuh (BMI), dan konsumsi alkohol. Hal ini menunjukkan bahwa selain faktor alami seperti usia, gaya hidup juga memainkan peran penting dalam risiko kanker. Oleh karena itu, upaya pencegahan kanker sebaiknya difokuskan pada promosi gaya hidup sehat, seperti rutin beraktivitas fisik, menjaga berat badan ideal, dan menghindari konsumsi alkohol berlebihan.
+2. Menggunakan algoritma machine learning untuk membandingkan performa model untuk mendapatkan model atau algoritma yang memiliki akurasi prediksi terbaik dalam memprediksi seseorang terkena cancer berdasarkan riwayat kesehatan dan aktivitas yang dilakukan. Menggunakan 6 model *machine learning* untuk memprediksi penyakit cancer pada responden, yaitu *Extreme Gradient Boosting* (XGBoost), *Logistik Regression*, *Decision Tree*, *K-Nearest Neighbors* (KNN), *Catboosting*, dan *Random Forest*.
 
 ## Data Understanding
 Dataset Cancer Prediction yang berasal dari Kaggle merupakan dataset yang berisi 1500 entri dan 9 kolom. Dataset ini dapat diunduh dari platform [kaggle](https://www.kaggle.com/datasets/rabieelkharoua/cancer-prediction-dataset) yang dipublikasikan oleh Rabie El Kharoua kumpulan dataset ini tersedia dibawah lisensi CC BY 4.0. 
