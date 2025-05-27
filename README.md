@@ -244,7 +244,7 @@ CatBoost mencoba memprediksi probabilitas kelas target berdasarkan fitur input d
 
 Pada pemodelan ini, *CatBoosting* diimplementasikan menggunakan `CatBoostClassifier` dari library `catboost` dengan memasukkan `X_train` dan `y_train` untuk melatih model, lalu menggunakan `X_test` dan `y_test` untuk menguji model dengan data testing yang tidak ada di data training. Parameter yang digunakan pada model ini adalah `depth = 4`, `learning_rate = 0.0563827883242152`, `iterations = 161`, `random_strength = 7`.
 
-### 5. Pemilihan Model
+### 7. Pemilihan Model
 
 Setelah semua model dijalankan, penulis memilih algoritma *Catboosting* sebagai model terbaik yang akan digunakan sebagai solusi untuk memprediksi penyakit kanker karena model ini memiliki akurasi dan skor f1 tertinggi dibandingkan model lainnya, serta kesalahan klasifikasi pada matriks confusion yang lebih kecil dibanding model lainnya. Penjelasan lebih lengkap mengenai alasan ini ada di bagian selanjutnya, yaitu **evaluation**.
 
