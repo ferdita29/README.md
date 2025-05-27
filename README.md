@@ -252,7 +252,7 @@ Pada proyek ini, penilaian model menggunakan confusion matrix, akurasi, dan f1 s
 
 Matriks Confusion merupakan sebuah tabel untuk mengukur akurasi dari model klasifikasi. Contoh dari Matriks Confusion beserta labelnya dapat dilihat pada gambar di bawah ini. 
 
-![Confusion_Matrix_5](https://github.com/user-attachments/assets/6c8ec441-ffcc-4d50-9904-520a82f90946) <br>
+![confusian matrik](https://github.com/user-attachments/assets/02f6da7a-969c-4b40-bb78-9a99f2dcd2ba) <br>
 
 Setiap baris pada matriks confusion merepresentasikan nilai sesungguhnya, sedangkan setiap kolom pada matriks confusion merepresentasikan nilai yang diprediksi. Terdapat 4 label pada matriks confusion seperti yang terlihat di gambar, yaitu TP, TN, FP, dan FN.
 1. *True Positive* (TP) merupakan jumlah data pada positif yang ditebak dengan benar.
