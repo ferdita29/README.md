@@ -62,14 +62,10 @@ dari output diatas didapati bahwa tidak terdapat missing velue pada dataset.
 <img src="https://github.com/user-attachments/assets/61755c61-cc2a-452d-99d8-39296bde77fb" alt="boxplot_BMI" width="350">
 <img src="https://github.com/user-attachments/assets/5efe5385-9d43-4bd6-ad14-ee81604648de" alt="boxplot_PhysicalActivity" width="350">
 
-Berikut adalah interpretasi dari boxplot di atas.
-1. Pada kolom `Age`, mayoritas responden berada di rentang usia sekitar 35 hingga 65 tahun, dan terdapat beberapa outlier di bawah usia 25. Namun, outlier ini tetap dipertahankan karena secara logis masih memungkinkan seseorang berusia di bawah 25 tahun ikut serta dalam data penelitian ini.
-2. Pada kolom `BMI`, persebaran data cukup lebar, dengan mayoritas nilai berada di kisaran 20–35. Terdapat sejumlah outlier dengan BMI di atas 38, yang mungkin menunjukkan kasus obesitas ekstrem. Outlier ini akan ditinjau lebih lanjut, karena secara medis BMI ekstrem mungkin valid, namun perlu dikonfirmasi.
-3. Pada kolom `PhysicalActivity`, terlihat persebaran nilai berada di antara 2 hingga 8, namun terdapat outlier di bawah 1, yang menunjukkan aktivitas fisik sangat rendah. Outlier ini perlu ditinjau karena dapat merepresentasikan gaya hidup sedentari, tetapi juga berpotensi merupakan kesalahan input.
-4. Pada kolom `AlcoholIntake`, mayoritas responden memiliki konsumsi alkohol di kisaran 1 hingga 4, dan terdapat beberapa outlier di atas 4.8. Meskipun tinggi, nilai-nilai ini masih mungkin secara realistis dan tidak langsung dihapus.
+penjelasan:
+Berdasarkan keempat fitur yang dianalisis, tidak ada indikasi outlier yang perlu ditangani. Hal ini menunjukkan bahwa data numerik dalam dataset relatif bersih dan berada dalam rentang yang wajar secara statistik maupun secara logis. Dengan demikian, tidak diperlukan proses pembersihan atau transformasi khusus terhadap outlier untuk variabel-variabel ini.
 
-Secara umum, terdapat beberapa outlier yang perlu dianalisis lebih lanjut. Namun, outlier pada kolom Age tetap dipertahankan karena masih masuk akal, sedangkan outlier pada fitur lainnya akan ditinjau lebih lanjut untuk menentukan apakah perlu ditangani berdasarkan konteks medis atau logika penelitian.
-
+Setelah dilakukan pengecekan data duplicate,missing velue dan outlier dapat disimpulkan bahwa dataset sudah bersih maka tidak perlu dilakukan cleaning data di data preparation dan bisa dilanjutkan untuk data preprocesing.
 
 ### Deskripsi Statistik dari Data
 
@@ -323,9 +319,8 @@ Berdasarkan hasil analisis menggunakan model CatBoost, faktor-faktor yang paling
 1. Berdasarkan data yang diperoleh, menunjukan bahwa faktor-faktor yang paling berpengaruh dalam memprediksi risiko kanker seseorang adalah usia, aktivitas fisik, indeks massa tubuh (BMI), dan konsumsi alkohol. Hal ini menunjukkan bahwa selain faktor alami seperti usia, gaya hidup juga memainkan peran penting dalam risiko kanker. Oleh karena itu, upaya pencegahan kanker sebaiknya difokuskan pada promosi gaya hidup sehat, seperti rutin beraktivitas fisik, menjaga berat badan ideal, dan menghindari konsumsi alkohol berlebihan.
 2. Setelah menguji data menggunakan 6 model *machine learning*, yaitu ***Extreme Gradient Boosting* (XGBoost)**, ***Logistik Regression***,***Decision Tree*** , ***K-Nearest Neighbors* (KNN)**, ***CatBoosting*** dan ***Random Forest*** untuk mendeteksi cancer, diperoleh model ***CatBoosting*** merupakan model terbaik dibandingkan model lainnya berdasarkan skor akurasi, skor F1 , dan jumlah kesalahan klasifikasi yang paling sedikit yaitu 72.00%.
 
-
-
-
+# Referensi
+1. Penjelasan mengenai penyakit kanker diambil dari website alodokter https://www.alodokter.com/penyakit-kanker
 
 
 
