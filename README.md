@@ -46,6 +46,30 @@ Dataset ini memiliki 9 variabel dengan keterangan sebagai berikut.
 
 data yang digunakan diawal sebanyak 1500 data dengan 9 kolom
 
+#### mengecek data duplicate
+<img src="https://github.com/user-attachments/assets/2da0765c-e430-44a4-9226-b2b52d7f468e" alt="cek_data_duplicate" width="200">
+
+dari hasil diatas terlihat bahwa tidak ada data yang terduplikasi.
+
+#### mengecek missing values
+<img src="https://github.com/user-attachments/assets/402cd37e-d93c-473e-8a2e-1a95946f4060" alt="cek_data_missingvelue" width="200">
+
+dari output diatas didapati bahwa tidak terdapat missing velue pada dataset.
+
+#### mengecek outlier
+<img src="https://github.com/user-attachments/assets/f2bb8ea8-8eaf-4fb6-996f-01bdbe3e5ddf" alt="boxplot_Age" width="350">
+<img src="https://github.com/user-attachments/assets/277b4056-6122-4e08-9357-dd0f128cecff" alt="boxplot_AlcoholIntak" width="350">
+<img src="https://github.com/user-attachments/assets/61755c61-cc2a-452d-99d8-39296bde77fb" alt="boxplot_BMI" width="350">
+<img src="https://github.com/user-attachments/assets/5efe5385-9d43-4bd6-ad14-ee81604648de" alt="boxplot_PhysicalActivity" width="350">
+
+Berikut adalah interpretasi dari boxplot di atas.
+1. Pada kolom `Age`, mayoritas responden berada di rentang usia sekitar 35 hingga 65 tahun, dan terdapat beberapa outlier di bawah usia 25. Namun, outlier ini tetap dipertahankan karena secara logis masih memungkinkan seseorang berusia di bawah 25 tahun ikut serta dalam data penelitian ini.
+2. Pada kolom `BMI`, persebaran data cukup lebar, dengan mayoritas nilai berada di kisaran 20–35. Terdapat sejumlah outlier dengan BMI di atas 38, yang mungkin menunjukkan kasus obesitas ekstrem. Outlier ini akan ditinjau lebih lanjut, karena secara medis BMI ekstrem mungkin valid, namun perlu dikonfirmasi.
+3. Pada kolom `PhysicalActivity`, terlihat persebaran nilai berada di antara 2 hingga 8, namun terdapat outlier di bawah 1, yang menunjukkan aktivitas fisik sangat rendah. Outlier ini perlu ditinjau karena dapat merepresentasikan gaya hidup sedentari, tetapi juga berpotensi merupakan kesalahan input.
+4. Pada kolom `AlcoholIntake`, mayoritas responden memiliki konsumsi alkohol di kisaran 1 hingga 4, dan terdapat beberapa outlier di atas 4.8. Meskipun tinggi, nilai-nilai ini masih mungkin secara realistis dan tidak langsung dihapus.
+
+Secara umum, terdapat beberapa outlier yang perlu dianalisis lebih lanjut. Namun, outlier pada kolom Age tetap dipertahankan karena masih masuk akal, sedangkan outlier pada fitur lainnya akan ditinjau lebih lanjut untuk menentukan apakah perlu ditangani berdasarkan konteks medis atau logika penelitian.
+
 
 ### Deskripsi Statistik dari Data
 
@@ -161,34 +185,10 @@ Pertama, akan diubah nilai-nilai kategorikal pada data menggunakan encoder sehin
 ### Data Cleaning
 Data cleaning adalah proses penting dalam analisis data dan machine learning yang bertujuan untuk memperbaiki atau menghapus data yang rusak, tidak konsisten, tidak lengkap, atau tidak relevan dari dataset agar kualitas analisis atau prediksi menjadi lebih akurat dan andal.
 
-#### mengecek data duplicate
-<img src="https://github.com/user-attachments/assets/2da0765c-e430-44a4-9226-b2b52d7f468e" alt="cek_data_duplicate" width="200">
-
-dari hasil diatas terlihat bahwa tidak ada data yang terduplikasi.
-
 #### Menghapus Kolom yang tidak digunakan
 <img src="https://github.com/user-attachments/assets/d155cbce-2a87-4504-ae10-83102a96e90d" alt="menghapus_duplikasi" width="200">
 
 dari hasil diatas menunjukkan bahwa dataset dengan jumlah 1500 data artinya dataset yang dipakai tidak ada data yang terduplikasi dan bisa lanjut untuk menganalisis.
-
-#### mengecek missing values
-<img src="https://github.com/user-attachments/assets/402cd37e-d93c-473e-8a2e-1a95946f4060" alt="cek_data_missingvelue" width="200">
-
-dari output diatas didapati bahwa tidak terdapat missing velue pada dataset.
-
-#### mengecek outlier
-<img src="https://github.com/user-attachments/assets/f2bb8ea8-8eaf-4fb6-996f-01bdbe3e5ddf" alt="boxplot_Age" width="350">
-<img src="https://github.com/user-attachments/assets/277b4056-6122-4e08-9357-dd0f128cecff" alt="boxplot_AlcoholIntak" width="350">
-<img src="https://github.com/user-attachments/assets/61755c61-cc2a-452d-99d8-39296bde77fb" alt="boxplot_BMI" width="350">
-<img src="https://github.com/user-attachments/assets/5efe5385-9d43-4bd6-ad14-ee81604648de" alt="boxplot_PhysicalActivity" width="350">
-
-Berikut adalah interpretasi dari boxplot di atas.
-1. Pada kolom `Age`, mayoritas responden berada di rentang usia sekitar 35 hingga 65 tahun, dan terdapat beberapa outlier di bawah usia 25. Namun, outlier ini tetap dipertahankan karena secara logis masih memungkinkan seseorang berusia di bawah 25 tahun ikut serta dalam data penelitian ini.
-2. Pada kolom `BMI`, persebaran data cukup lebar, dengan mayoritas nilai berada di kisaran 20–35. Terdapat sejumlah outlier dengan BMI di atas 38, yang mungkin menunjukkan kasus obesitas ekstrem. Outlier ini akan ditinjau lebih lanjut, karena secara medis BMI ekstrem mungkin valid, namun perlu dikonfirmasi.
-3. Pada kolom `PhysicalActivity`, terlihat persebaran nilai berada di antara 2 hingga 8, namun terdapat outlier di bawah 1, yang menunjukkan aktivitas fisik sangat rendah. Outlier ini perlu ditinjau karena dapat merepresentasikan gaya hidup sedentari, tetapi juga berpotensi merupakan kesalahan input.
-4. Pada kolom `AlcoholIntake`, mayoritas responden memiliki konsumsi alkohol di kisaran 1 hingga 4, dan terdapat beberapa outlier di atas 4.8. Meskipun tinggi, nilai-nilai ini masih mungkin secara realistis dan tidak langsung dihapus.
-
-Secara umum, terdapat beberapa outlier yang perlu dianalisis lebih lanjut. Namun, outlier pada kolom Age tetap dipertahankan karena masih masuk akal, sedangkan outlier pada fitur lainnya akan ditinjau lebih lanjut untuk menentukan apakah perlu ditangani berdasarkan konteks medis atau logika penelitian.
 
 ### One Hot Encoding
 
