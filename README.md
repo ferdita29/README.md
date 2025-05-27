@@ -321,13 +321,7 @@ Berdasarkan hasil analisis menggunakan model CatBoost, faktor-faktor yang paling
 
 ## Kesimpulan: 
 1. Berdasarkan data yang diperoleh, menunjukan bahwa faktor-faktor yang paling berpengaruh dalam memprediksi risiko kanker seseorang adalah usia, aktivitas fisik, indeks massa tubuh (BMI), dan konsumsi alkohol. Hal ini menunjukkan bahwa selain faktor alami seperti usia, gaya hidup juga memainkan peran penting dalam risiko kanker. Oleh karena itu, upaya pencegahan kanker sebaiknya difokuskan pada promosi gaya hidup sehat, seperti rutin beraktivitas fisik, menjaga berat badan ideal, dan menghindari konsumsi alkohol berlebihan.
-2. Seluruh pasien yang terdiagnosis kanker dalam dataset ini cenderung memiliki kesamaan pada beberapa faktor, yaitu:
-  - Memiliki riwayat kanker dalam keluarga (CancerHistory).
-  - Memiliki risiko genetik sedang hingga tinggi (GeneticRisk).
-  - Banyak di antaranya merokok (Smoking = 1).
-  - Umumnya berada pada rentang usia 40 hingga 65 tahun.
-  - Perempuan sedikit lebih dominan dalam kasus positif dibandingkan laki-laki, berdasarkan distribusi gender pasien.
-3. Setelah menguji data menggunakan 6 model *machine learning*, yaitu ***Extreme Gradient Boosting* (XGBoost)**, ***Logistik Regression***,***Decision Tree*** , ***K-Nearest Neighbors* (KNN)**, ***CatBoosting*** dan ***Random Forest*** untuk mendeteksi cancer, diperoleh model ***CatBoosting*** merupakan model terbaik dibandingkan model lainnya berdasarkan skor akurasi, skor F1 , dan jumlah kesalahan klasifikasi yang paling sedikit yaitu 72.00%.
+2. Setelah menguji data menggunakan 6 model *machine learning*, yaitu ***Extreme Gradient Boosting* (XGBoost)**, ***Logistik Regression***,***Decision Tree*** , ***K-Nearest Neighbors* (KNN)**, ***CatBoosting*** dan ***Random Forest*** untuk mendeteksi cancer, diperoleh model ***CatBoosting*** merupakan model terbaik dibandingkan model lainnya berdasarkan skor akurasi, skor F1 , dan jumlah kesalahan klasifikasi yang paling sedikit yaitu 72.00%.
 
 
 
